@@ -18,11 +18,11 @@ if (!projectId) {
 }
 
 // Sepolia RPC URL
-export const MAINNET_RPC_URL = "https://ethereum-rpc.publicnode.com";
+export const MAINNET_RPC_URL = process.env.NEXT_PUBLIC_MAINNET_RPC_URL!;
 export const ARBITRUM_RPC_URL =
-  "https://go.getblock.io/2120e985bbf4402f8dfd2311683260c8";
-export const BSC_TESTNET_RPC_URL = "https://bsc-testnet-rpc.publicnode.com";
-export const BSC_RPC_URL = "https://bsc-dataseed.bnbchain.org";
+  process.env.NEXT_PUBLIC_ARBITRUM_RPC_URL!;
+export const BSC_TESTNET_RPC_URL = process.env.NEXT_PUBLIC_BSC_TESTNET_RPC_URL!;
+export const BSC_RPC_URL = process.env.NEXT_PUBLIC_BSC_RPC_URL!;
 
 // Custom Sepolia configuration with your RPC
 export const customArbitrum = {
